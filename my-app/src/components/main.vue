@@ -48,25 +48,24 @@
     </div>
   </div>
 
-<div id="section3">
-  <div class="experience-container">
-    <div class="experience-text">
-      <h2>IT EXPERIENCE</h2>
-      <ul>
-        <li>Basic Java</li>
-        <li>Basic Python</li>
-        <li>Had HTML during grade school</li>
-        <li>UI/UX Experience (Website and mobile: RamQuest – Group Project)</li>
-        <li>Mobile Application (RESCUE app – Group Project)</li>
-        <li>mySQL</li>
-      </ul>
-    </div>
-    <div class="experience-image">
-      <img :src="itExpImage" alt="RamQuest and RESCUE apps">
+  <div id="section3">
+    <div class="experience-container">
+      <div class="experience-text">
+        <h2>IT EXPERIENCE</h2>
+        <ul>
+          <li>Basic Java</li>
+          <li>Basic Python</li>
+          <li>Had HTML during grade school</li>
+          <li>UI/UX Experience (Website and mobile: RamQuest – Group Project)</li>
+          <li>Mobile Application (RESCUE app – Group Project)</li>
+          <li>mySQL</li>
+        </ul>
+      </div>
+      <div class="experience-image">
+        <img :src="itExpImage" alt="RamQuest and RESCUE apps">
+      </div>
     </div>
   </div>
-</div>
-
 </template>
 
 <script setup>
@@ -76,7 +75,6 @@ import spotifyIcon from '/images/spotify-icon.png';
 import introImage from '/images/intro.png';
 import itExpImage from '/images/it-exp.png';
 import hobby1Image from '/images/hobby.png';
-
 
 import bg1 from '/images/bg1.png';
 import bg2 from '/images/bg2.png';
