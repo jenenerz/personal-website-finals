@@ -1,5 +1,5 @@
 <template>
-  <main/>
+  <PersonalProfile/>
   <comment/>
 </template>
 

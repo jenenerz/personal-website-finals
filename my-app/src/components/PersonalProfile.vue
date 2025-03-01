@@ -1,10 +1,9 @@
 <template>
-  <div id="section1" :style="section1Style">
+  <div id="section1" class="section">
     <div class="navbar">
       <a href="#acads">ACADS</a>
       <a href="#interests">INTERESTS</a>
     </div>
-
     <div class="socials">
       <p>Add me on my socials!</p>
       <div class="social-icons">
@@ -21,7 +20,7 @@
     </div>
   </div>
 
-  <div id="section2" :style="section2Style">
+  <div id="section2" class="section">
     <div class="education-wrapper">
       <img :src="introImage" alt="intro" class="education-image">
       <div class="education-container">
@@ -48,7 +47,7 @@
     </div>
   </div>
 
-  <div id="section3">
+  <div id="section3" class="section">
     <div class="experience-container">
       <div class="experience-text">
         <h2>IT EXPERIENCE</h2>
@@ -74,47 +73,53 @@ import igIcon from '/images/ig-icon.png';
 import spotifyIcon from '/images/spotify-icon.png';
 import introImage from '/images/intro.png';
 import itExpImage from '/images/it-exp.png';
-import hobby1Image from '/images/hobby.png';
-
-import bg1 from '/images/bg1.png';
-import bg2 from '/images/bg2.png';
-import bg4 from '/images/bg4.png';
-
-const section1Style = {
-  background: `url(${bg1}) no-repeat center center/cover`,
-  height: '100vh',
-  width: '100%',
-};
-
-const section2Style = {
-  background: `url(${bg2}) no-repeat center center/cover`,
-  height: '100vh',
-  width: '100%',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  flexDirection: 'column',
-  gap: '12px',
-};
-
-const section4Style = {
-  background: `url(${bg4}) no-repeat center center/cover`,
-  height: '100vh',
-  width: '100%',
-};
+import bg1 from 'https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/home/images/bg1.png';
+import bg2 from 'https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/home/images/bg2.png';
+import bg4 from 'https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/home/images/bg4.png';
 </script>
 
 <style scoped>
-#section3 {
-  background-color: #f8f7f2;
-  height: 100vh;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#section5 {
-  background-color: #f8f7f2;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section {
   height: 100vh;
   width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#section1 {
+  background-image: url(bg1);
+}
+
+#section2 {
+  background-image: url(bg2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#section3 {
+  background-color: #f8f7f2;
+}
+
+#section4 {
+  background-image: url(bg4);
 }
 
 .navbar {
@@ -143,17 +148,6 @@ const section4Style = {
   color: white;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-icons a img {
-  width: 40px;
-  height: 40px;
-}
-
 .education-wrapper {
   display: flex;
   flex-direction: column;
@@ -166,15 +160,7 @@ const section4Style = {
   width: 60%;
   max-width: 500px;
   height: auto;
-  object-fit: cover;
   border-radius: 10px;
-}
-
-#section2 img {
-  max-width: 80%;
-  max-height: 500px;
-  height: auto;
-  object-fit: contain;
 }
 
 .education-container {
@@ -184,94 +170,5 @@ const section4Style = {
   border-radius: 10px;
   width: 100%;
   margin-top: 7px;
-}
-
-.education-container .school {
-  margin-bottom: 20px;
-}
-
-.education-container .school h2 {
-  color: #562123;
-}
-
-.education-container .school h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.education-container .school ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.education-container .school ul li {
-  margin-bottom: 5px;
-}
-
-.experience-container {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 20px 0 20px 50px;
-}
-
-.experience-text {
-  background-color: #562123;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 60%;
-}
-
-.experience-text h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-}
-
-.experience-text ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.experience-text ul li {
-  margin-bottom: 5px;
-}
-
-.experience-image img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
-}
-
-.hobbies-container {
-  background-color: #562123;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  margin: 20px 0 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.hobbies-container h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-}
-
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel img {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-  border-radius: 10px;
-  scroll-snap-align: start;
 }
 </style>
