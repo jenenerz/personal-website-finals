@@ -25,50 +25,6 @@
   </div>
 </template>
 
-<script>
-import { createClient } from '@supabase/supabase-js';
-
-const supabaseUrl = 'YOUR_SUPABASE_URL'; // Replace with your Supabase URL
-const supabaseKey = 'YOUR_SUPABASE_ANON_KEY'; // Replace with your Supabase Anon Key
-
-const supabase = createClient(supabaseUrl, supabaseKey);
-
-export default {
-  data() {
-    return {
-      guestName: '',
-      guestComment: '',
-      comments: [],
-    };
-  },
-  async mounted() {
-    await this.fetchComments();
-  },
-  methods: {
-    async fetchComments() {
-      const { data, error } = await supabase.from('comments').select('*').order('created_at', { ascending: false });
-      if (error) {
-        console.error('Error fetching comments:', error);
-      } else {
-        this.comments = data;
-      }
-    },
-    async addComment() {
-      const { guestName, guestComment } = this;
-      const { error } = await supabase.from('comments').insert([{ name: guestName, message: guestComment }]);
-
-      if (error) {
-        console.error('Error adding comment:', error);
-      } else {
-        this.guestName = '';
-        this.guestComment = '';
-        await this.fetchComments(); // Refresh comments after adding
-      }
-    },
-  },
-};
-</script>
-
 <style scoped>
 .comment-section {
 margin-top: 20px;
