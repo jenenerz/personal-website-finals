@@ -1,8 +1,10 @@
 <template>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <div id="section1">
         <div class="navbar">
             <a href="#section2">ACADS</a>
-            <a href="#hobbies">INTERESTS</a>
+            <a href="#section3">INTERESTS</a>
         </div>
    
         <div class="socials">
@@ -66,17 +68,20 @@
             </div>
         </div>
 
-
-        <div id= "hobbies" class="hobbies-container">
-            <h2>Hobbies & Interests</h2>
-            <div class="carousel">
-                <img src="/images/games.png" alt="Hobby 1">
-                <img src="/images/music.png" alt="Hobby 2" >
-                <img src="/images/shows.png" alt="Hobby 3" >
-                <img src="/images/photography.png" alt="Hobby 4" >
-
+        <div id="hobbies" class="hobbies-container">
+            <div class="hobbies-text">
+                <h2>Hobbies & Interests</h2>
+                <ul>
+                    <li><strong>Music:</strong> 1D, Chappell Roan, Olivia Rodrigo, SZA</li>
+                    <li><strong>Films:</strong> Beautiful Boy, Challengers, Pitch Perfect Trilogy</li>
+                    <li><strong>Shows:</strong> Bojack Horseman, Grey’s Anatomy, The Bear</li>
+                    <li><strong>Video Games:</strong> Life is Strange, The Last of Us, Valorant</li>
+                    <li><strong>Photography</strong></li>
+                    <li><strong>Froyo!!</strong></li>
+                </ul>
             </div>
-        </div>
+    </div>
+
     </div>
 
     <div id="section4">
@@ -84,13 +89,13 @@
             <div class="goals-text">
                 <h2>Goals & Dreams</h2>
                 <ul>
-                    <li>To live on my own and give back to my siblings</li>
-                    <li>To meet my favorite artists</li>
-                    <li>Graduate college with Honors</li>
-                    <li>Learn to play the piano</li>
-                    <li>Find a stable job that I enjoy</li>
-                    <li>Travel to Europe (and around the world)</li>
-                    <li>To live near a beach</li>
+                    <li>☆ To live on my own and give back to my siblings</li>
+                    <li>☆ To meet my favorite artists</li>
+                    <li>☆ Graduate college with Honors</li>
+                    <li>☆ Learn to play the piano</li>
+                    <li>☆ Find a stable job that I enjoy</li>
+                    <li>☆ Travel to Europe (and around the world)</li>
+                    <li>☆ To live near a beach</li>
                 </ul>
             </div>
         </div>
@@ -102,12 +107,12 @@
 </template>
 
 <style>
- * {
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -117,60 +122,85 @@ body {
     align-items: center;
     justify-content: space-between;
     overflow-x: hidden;
-
+    padding-top: 80px;
+    justify-content: flex-start;
 }
 
 
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 50px;
+    font-size: 28px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #562123;
+    padding: 20px;
+}
+
+
+
+.navbar a {
+    color: #f8f7f2;
+    text-decoration: none;
+}
+
+
+/* Sections */
 #section1 {
-            background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg1.png') no-repeat center center/cover;
-            height: 100vh;
-            width: 100%;
-            display: block;
-        }
+    background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg1.png') 
+        no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    display: block;
+}
 
-        #section2 {
-            background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg2.png') no-repeat center center/cover; 
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            display: block;
-            background-color: #f8f7f2;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
+#section2 {
+    background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg2.png') 
+        no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background-color: #f8f7f2;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
+#section3 {
+    background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg3.png') 
+        no-repeat center center/cover;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        #section3 {
-            background-color: #f8f7f2;
-            min-height: 100vh;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            padding-top: 50px;
-        }
+#section4 {
+    background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg4.png') 
+        no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+}
 
-
-
-        #section4 {
-            background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg4.png') no-repeat center center/cover;
-            height: 100vh;
-            width: 100%;
-        }
-        
 #section4 .container {
     background-color: transparent;
 }
 
-        #section5 {
-            background-color: #f8f7f2;
-            height: 100vh;
-            width: 100%;
-        }
+#section5 {
+    background-color: #f8f7f2;
+    height: 100vh;
+    width: 100%;
+}
 
-        
+/* Containers */
 .container.two-columns {
     display: flex;
     justify-content: space-between;
@@ -183,48 +213,40 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 20px;
 }
 
 .goals-text h2 {
-    text-align: left;
+    text-align: center;
     width: 70%;
+    color: #f8f7f2;
+    margin-top:80px;
+    margin-left: -75px;
+    font-size: 30px;
 }
+
+
 
 .goals-text ul {
     list-style-type: none;
     padding: 0;
-    width: 55%;
-    text-align: left;
+    width: 60%; /* Adjust width for readability */
+    margin-top:30px;
+    text-align: left; /* Align text to the left */
+    margin-left: 80px; /* Ensure it starts from the left */
 }
 
-
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 50px;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 0;
+.goals-text ul li {
+    font-size: 17px; /* Adjust font size */
+    margin-bottom: 10px; /* Add spacing between list items */
+    color: #f8f7f2;
+    
 }
 
-
-
-.navbar a {
-    color: #222121;
-    text-decoration: none;
-}
-
-
-
-
-
-
+/* Social Media */
 .socials {
     position: absolute;
-    bottom: 20px;  /* Adjust as needed */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -247,111 +269,93 @@ body {
 .social-icons a img {
     width: 40px;
     height: 40px;
-    filter: brightness(0) invert(1); /* Makes icons white for visibility */
+    filter: brightness(0) invert(1);
 }
 
-
-
+/* Education */
 .education-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 55%; /* Match the education-container width */
-    margin: 0 auto; /* Center align */
+    width: 55%;
+    margin: 0 auto;
 }
-
 
 .education-image {
-    width: 60%; /* Adjust this to make it smaller (try 70%, 60%, etc.) */
-    max-width: 500px; /* Set a max width to prevent it from getting too big */
-    height: auto; /* Maintain aspect ratio */
+    width: 60%;
+    max-width: 500px;
+    height: auto;
     object-fit: cover;
-    border-radius: 10px; /* Optional: Rounds the image corners */
+    border-radius: 10px;
 }
-
 
 #section2 img {
-    max-width: 80%; /* Limits the width relative to the container */
-    max-height: 500px; /* Prevents it from being too tall */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: contain; /* Ensures the whole image is visible */
+    max-width: 80%;
+    max-height: 500px;
+    height: auto;
+    object-fit: contain;
 }
-
-
-
 
 .education-container {
     background-color: #f8f7f2;
     color: black;
     padding: 20px;
     border-radius: 10px;
-    width: 100%; /* Match the width of education-wrapper */
-    margin-top: 7px; /* Space between image and container */
+    width: 100%;
+    margin-top: 7px;
 }
-
 
 .education-container .school {
     margin-bottom: 20px;
 }
 
-
 .education-container .school h2 {
     color: #562123;
 }
-
 
 .education-container .school h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-
 .education-container .school ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-
 .education-container .school ul li {
     margin-bottom: 5px;
 }
 
-
+/* Experience */
 .experience-container {
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-   
 }
 
-
-
 .experience-text {
-    background-color:#562123;
+    background-color: #562123;
     color: white;
     padding: 20px;
     border-radius: 10px;
     width: 60%;
 }
 
-
 .experience-text h2 {
     margin-bottom: 20px;
     font-size: 24px;
 }
-
 
 .experience-text ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-
 .experience-text ul li {
     margin-bottom: 5px;
 }
-
 
 .experience-image img {
     width: 100%;
@@ -359,22 +363,63 @@ body {
     border-radius: 10px;
 }
 
-
+/* Hobbies & Interests Section */
 .hobbies-container {
     background-color: #562123;
     color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
-    margin: 20px auto; /* Center horizontally */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center; /* Ensures text is centered */
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
 }
 
+@media (max-width: 768px) {
+    .hobbies-container {
+        width: 80%;
+    }
+}
 
+.hobbies-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hobbies-content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    width: fit-content; /* Keeps content centered */
+}
+
+.hobbies-content ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Highlighting certain hobbies */
+.hobbies-content ul li strong {
+    color: #ffcc00; /* Gold color for emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hobbies-container {
+        width: 80%;
+    }
+    
+    .hobbies-text h2 {
+        font-size: 24px;
+    }
+
+    .hobbies-content ul li {
+        font-size: 16px;
+    }
+}
 
 
 
