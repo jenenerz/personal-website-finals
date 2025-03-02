@@ -71,9 +71,10 @@
             <h2>Hobbies & Interests</h2>
             <div class="carousel">
                 <img src="/images/games.png" alt="Hobby 1">
-                <img src="/images/music.png" alt="Hobby 2">
-                <img src="/images/shows.png" alt="Hobby 3">
-                <img src="/images/photography.png" alt="Hobby 4">
+                <img src="/images/music.png" alt="Hobby 2" >
+                <img src="/images/shows.png" alt="Hobby 3" >
+                <img src="/images/photography.png" alt="Hobby 4" >
+
             </div>
         </div>
     </div>
@@ -98,12 +99,9 @@
     <div id="section5" class="picture-gallery">
         <img src="/images/gallery.png" alt="Picture Gallery">
     </div>
-            <footer>
-                <p>References</p>
-            </footer>
-        </template>
+</template>
 
-<style scoped>
+<style>
  * {
     margin: 0;
     padding: 0;
@@ -118,6 +116,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow-x: hidden;
+
 }
 
 
@@ -125,6 +125,7 @@ body {
             background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg1.png') no-repeat center center/cover;
             height: 100vh;
             width: 100%;
+            display: block;
         }
 
         #section2 {
@@ -135,14 +136,23 @@ body {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: 12px;
+            display: block;
+            background-color: #f8f7f2;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
+
 
         #section3 {
             background-color: #f8f7f2;
-            height: 100vh;
+            min-height: 100vh;
             width: 100%;
+            margin: 0;
+            padding: 0;
+            padding-top: 50px;
         }
+
+
 
         #section4 {
             background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg4.png') no-repeat center center/cover;
@@ -159,6 +169,7 @@ body {
             height: 100vh;
             width: 100%;
         }
+
         
 .container.two-columns {
     display: flex;
@@ -186,6 +197,8 @@ body {
     text-align: left;
 }
 
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -198,10 +211,15 @@ body {
 }
 
 
+
 .navbar a {
     color: #222121;
     text-decoration: none;
 }
+
+
+
+
 
 
 .socials {
@@ -303,8 +321,10 @@ body {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 20px 0 20px 50px;
+    margin: 0 auto;
+   
 }
+
 
 
 .experience-text {
@@ -353,5 +373,10 @@ body {
     flex-direction: column;
     text-align: center; /* Ensures text is centered */
 }
+
+
+
+
+
 </style>
 
