@@ -39,9 +39,6 @@
         </div>
     </footer>
 
-    <div class="footer-bottom">
-        <p>&copy; 2025 Jenine Dulay. All rights reserved.</p>
-    </div>
 </div>
 
 </template>

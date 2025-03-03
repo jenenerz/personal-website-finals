@@ -1,275 +1,192 @@
 <template>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div id="section1">
+    <div class="navbar">
+      <a href="#section2">ACADS</a>
+      <a href="#section3">INTERESTS</a>
+    </div>
 
-    <div id="section1">
-        <div class="navbar">
-            <a href="#section2">ACADS</a>
-            <a href="#section3">INTERESTS</a>
+    <div class="socials">
+      <p>Add me on my socials!</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/jenine-dulay-b9988b284/" target="_blank">
+          <img src="/images/linkedin-icon.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.instagram.com/elneeeeee/" target="_blank">
+          <img src="/images/ig-icon.png" alt="Instagram" />
+        </a>
+        <a href="https://open.spotify.com/user/parkjimin3389?si=17e0114fba8641b8" target="_blank">
+          <img src="/images/spotify-icon.png" alt="Spotify" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="section2">
+    <div class="education-wrapper">
+      <img src="/images/intro.png" alt="intro" class="education-image" />
+      <div class="education-container">
+        <h2>EDUCATION & ACHIEVEMENTS</h2>
+        <div class="school">
+          <h3>Immaculate Heart of Mary College (2018-2023)</h3>
+          <ul>
+            <li>Junior High - Senior High (STEM Strand)</li>
+            <li>Graduated Junior High with Honors</li>
+            <li>Graduated Senior High with Honors</li>
+            <li>STEM SOCIETY Organization Member</li>
+          </ul>
         </div>
-   
-        <div class="socials">
-            <p>Add me on my socials!</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/jenine-dulay-b9988b284/" target="_blank">
-                    <img src="/images/linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/elneeeeee/" target="_blank">
-                    <img src="/images/ig-icon.png" alt="Instagram">
-                </a>
-                <a href="https://open.spotify.com/user/parkjimin3389?si=17e0114fba8641b8" target="_blank">
-                    <img src="/images/spotify-icon.png" alt="Spotify">
-                </a>
-            </div>
+        <div class="school">
+          <h3>Asia Pacific College (2023-PRESENT)</h3>
+          <ul>
+            <li>BSIT-MI</li>
+            <li>1st Year of College - Honors</li>
+            <li>Cinemasoma Member</li>
+            <li>Flickers Photo Society Member</li>
+          </ul>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div id="section2">
-        <div class="education-wrapper">
-            <img src="/images/intro.png" alt="intro" class="education-image">
-            <div class="education-container">
-                <h2>EDUCATION & ACHIEVEMENTS</h2>
-                <div class="school">
-                    <h3>Immaculate Heart of Mary College (2018-2023)</h3>
-                    <ul>
-                        <li>Junior High - Senior High (STEM Strand)</li>
-                        <li>Graduated Junior High with Honors</li>
-                        <li>Graduated Senior High with Honors</li>
-                        <li>STEM SOCIETY Organization Member</li>
-                    </ul>
-                </div>
-                <div class="school">
-                    <h3>Asia Pacific College (2023-PRESENT)</h3>
-                    <ul>
-                        <li>BSIT-MI</li>
-                        <li>1st Year of College - Honors</li>
-                        <li>Cinemasoma Member</li>
-                        <li>Flickers Photo Society Member</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<div id="section3" class="container">
+  <div id="experience">
+    <h2 class="center">IT EXPERIENCE</h2>
+    <div class="two-columns">
+      <ul>
+        <li>☆ Basic Java</li>
+        <li>☆ Basic Python</li>
+        <li>☆ Basic HTML, CSS, Javascript</li>
+        <li>☆ UI/UX Experience (Website and mobile: RamQuest - Group Project)</li>
+        <li>☆ Mobile Application (RESCUE app - Group Project)</li>
+        <li>☆ MySQL</li>
+      </ul>
+      <img src="/images/it-exp.png" alt="IT Projects">
     </div>
-   
-    <div id="section3">
-        <div class="experience-container">
-            <div class="experience-text">
-                <h2>IT EXPERIENCE</h2>
-                <ul>
-                    <li>Basic Java</li>
-                    <li>Basic Python</li>
-                    <li>Had HTML during grade school</li>
-                    <li>UI/UX Experience (Website and mobile: RamQuest – Group Project)</li>
-                    <li>Mobile Application (RESCUE app – Group Project)</li>
-                    <li>mySQL</li>
-                </ul>
-            </div>
-            <div class="experience-image">
-                <img src="/images/it-exp.png" alt="RamQuest and RESCUE apps">
-            </div>
-        </div>
+  </div>
 
-        <div id="hobbies" class="hobbies-container">
-            <div class="hobbies-text">
-                <h2>Hobbies & Interests</h2>
-                <ul>
-                    <li><strong>Music:</strong> 1D, Chappell Roan, Olivia Rodrigo, SZA</li>
-                    <li><strong>Films:</strong> Beautiful Boy, Challengers, Pitch Perfect Trilogy</li>
-                    <li><strong>Shows:</strong> Bojack Horseman, Grey’s Anatomy, The Bear</li>
-                    <li><strong>Video Games:</strong> Life is Strange, The Last of Us, Valorant</li>
-                    <li><strong>Photography</strong></li>
-                    <li><strong>Froyo!!</strong></li>
-                </ul>
-            </div>
+  <div id="hobbies-and-goals" class="container two-columns">
+    <div id="hobbies">
+      <h2 class="center">Hobbies & Interests</h2>
+      <ul>
+        <li>☆ Music (1D, Chappell Roan, Olivia Rodrigo, SZA)</li>
+        <li>☆ Films (Beautiful Boy, Challengers, Pitch Perfect Trilogy)</li>
+        <li>☆ Shows (Bojack Horseman, Grey’s Anatomy, The Bear)</li>
+        <li>☆ Video Games (Life is Strange, The Last of Us, Valorant)</li>
+        <li>☆ Photography</li>
+        <li>☆ F1</li>
+      </ul>
     </div>
+    <div id="goals">
+      <h2 class="center">Goals & Dreams</h2>
+    <ul>
+        <li>☆  To live on my own and give back to my siblings</li>
+        <li>☆  To meet my favorite artists</li>
+        <li>☆  Graduate college with Honors</li>
+        <li>☆  Learn to play the piano</li>
+        <li>☆  Find a stable job that I enjoy</li>
+        <li>☆  Travel to Europe (and around the world)</li>
+        <li>☆  To live near a beach</li>
+    </ul>
 
     </div>
+  </div>
+</div>
 
-    <div id="section4">
-        <div class="container two-columns">
-            <div class="goals-text">
-                <h2>Goals & Dreams</h2>
-                <ul>
-                    <li>☆ To live on my own and give back to my siblings</li>
-                    <li>☆ To meet my favorite artists</li>
-                    <li>☆ Graduate college with Honors</li>
-                    <li>☆ Learn to play the piano</li>
-                    <li>☆ Find a stable job that I enjoy</li>
-                    <li>☆ Travel to Europe (and around the world)</li>
-                    <li>☆ To live near a beach</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div id="section5" class="picture-gallery">
-        <img src="/images/gallery.png" alt="Picture Gallery">
-    </div>
+  <div id="section5" class="picture-gallery">
+    <img src="/images/gallery.png" alt="Picture Gallery" />
+  </div>
 </template>
+
+
+<script setup>
+// Vue 3 does not require options like `export default` in `<script setup>`
+</script>
 
 <style>
 /* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    overflow-x: hidden;
-    padding-top: 80px;
-    justify-content: flex-start;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+  padding-top: 80px;
 }
-
 
 /* Navigation Bar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 50px;
-    font-size: 28px;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background: #562123;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 50px;
+  font-size: 28px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #562123;
 }
-
-
 
 .navbar a {
-    color: #f8f7f2;
-    text-decoration: none;
+  color: #f8f7f2;
+  text-decoration: none;
 }
 
-
 /* Sections */
+#section1, #section2, #section3, #section5 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
 #section1 {
-    background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg1.png') 
-        no-repeat center center/cover;
-    height: 100vh;
-    width: 100%;
-    display: block;
+  background-image: url('/images/bg1.png');
 }
 
 #section2 {
-    background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg2.png') 
-        no-repeat center center/cover;
-    height: 100vh;
-    width: 100%;
-    display: block;
-    background-color: #f8f7f2;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  background-image: url('/images/bg2.png');
 }
 
 #section3 {
-    background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg3.png') 
-        no-repeat center center/cover;
-    min-height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#section4 {
-    background: url('https://raw.githubusercontent.com/jenenerz/personal-website-finals/main/my-app/public/images/bg4.png') 
-        no-repeat center center/cover;
-    height: 100vh;
-    width: 100%;
-}
-
-#section4 .container {
-    background-color: transparent;
+  background-image: url('/images/bg3.png');
 }
 
 #section5 {
-    background-color: #f8f7f2;
-    height: 100vh;
-    width: 100%;
-}
-
-/* Containers */
-.container.two-columns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.goals-text {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-}
-
-.goals-text h2 {
-    text-align: center;
-    width: 70%;
-    color: #f8f7f2;
-    margin-top:80px;
-    margin-left: -75px;
-    font-size: 30px;
-}
-
-
-
-.goals-text ul {
-    list-style-type: none;
-    padding: 0;
-    width: 60%; /* Adjust width for readability */
-    margin-top:30px;
-    text-align: left; /* Align text to the left */
-    margin-left: 80px; /* Ensure it starts from the left */
-}
-
-.goals-text ul li {
-    font-size: 17px; /* Adjust font size */
-    margin-bottom: 10px; /* Add spacing between list items */
-    color: #f8f7f2;
-    
+  background-color: #f8f7f2;
 }
 
 /* Social Media */
 .socials {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .socials p {
-    font-style: italic;
-    margin-bottom: 10px;
-    color: white;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: white;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .social-icons a img {
-    width: 40px;
-    height: 40px;
-    filter: brightness(0) invert(1);
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
 }
 
 /* Education */
@@ -303,15 +220,19 @@ body {
     border-radius: 10px;
     width: 100%;
     margin-top: 7px;
+    border-radius: 30px;
 }
 
 .education-container .school {
     margin-bottom: 20px;
 }
 
-.education-container .school h2 {
-    color: #562123;
+
+.education-container h2 {
+  margin-bottom: 20px; /* Adjust as needed */
+  color: #562123;
 }
+
 
 .education-container .school h3 {
     font-size: 20px;
@@ -321,107 +242,115 @@ body {
 .education-container .school ul {
     list-style-type: none;
     padding-left: 0;
+    text-align: center;
 }
 
 .education-container .school ul li {
     margin-bottom: 5px;
 }
 
-/* Experience */
-.experience-container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+.education-container .school ul li:last-child {
+    margin-bottom: 50px; /* Adjust the value as needed */
 }
 
-.experience-text {
-    background-color: #562123;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 60%;
+
+/* IT Experience */
+#section3 #experience {
+  margin-bottom: 20px;
+  border: 2px solid #562123;
+  padding: 20px;
+  border-radius: 30px;
 }
 
-.experience-text h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
+#section3 #experience .two-columns {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.experience-text ul {
-    list-style-type: none;
-    padding-left: 0;
+#section3 #experience img {
+  max-width: 300px;
+  border-radius: 8px;
 }
 
-.experience-text ul li {
-    margin-bottom: 5px;
+#section3 #experience {
+  margin: 20px auto; /* Centers it horizontally */
+  padding: 20px;
+  border: 2px solid #562123;
+  border-radius: 30px;
+  width: 80%; /* Adjust width as needed */
 }
 
-.experience-image img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 10px;
+#experience ul {
+  margin-left: 70px;
 }
 
-/* Hobbies & Interests Section */
-.hobbies-container {
-    background-color: #562123;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    margin: 40px auto;
-    text-align: center;
+#experience ul li,  {
+  margin-bottom: 10px; /* Space between each list item */
 }
 
-@media (max-width: 768px) {
-    .hobbies-container {
-        width: 80%;
-    }
+#section3 #experience h2 {
+  color: #562123;
 }
 
-.hobbies-text h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
+
+/* Hobbies and Goals */
+#hobbies-and-goals {
+  display: flex;
+  flex-direction: row; /* Ensures they are side by side */
+  justify-content: space-between;
+  gap: 20px;
+  width: 83%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: auto;
+  max-height: 350px;
 }
 
-.hobbies-content ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    margin: 0 auto;
-    width: fit-content; /* Keeps content centered */
+#hobbies, #goals {
+  flex: 1; /* Ensures equal width */
+  background-color: #562123;
+  color: #f8f7f2;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Makes the inner content stack */
+  padding: 20px 20px 10px; 
+  padding-bottom: 0;
 }
 
-.hobbies-content ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: 1.6;
+#hobbies h2.center, #goals h2.center {
+  text-align: center;
 }
 
-/* Highlighting certain hobbies */
-.hobbies-content ul li strong {
-    color: #ffcc00; /* Gold color for emphasis */
+#experience ul,
+#hobbies ul,
+#goals ul,
+.education-container ul {
+  list-style: none; 
+  text-align: left;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hobbies-container {
-        width: 80%;
-    }
-    
-    .hobbies-text h2 {
-        font-size: 24px;
-    }
-
-    .hobbies-content ul li {
-        font-size: 16px;
-    }
+#hobbies h2.center, 
+#goals h2.center {
+  margin-bottom: 15px; /* Space between header and list */
 }
 
+#hobbies ul, 
+#goals ul {
+  padding-left: 0; /* Remove default padding */
+  margin-top: 10px; /* Additional space between the header and the list */
+  margin-left: 40px; 
+  margin-bottom: 0; /* Remove extra bottom space */
+  padding-bottom: 0; /* Ensure no extra padding */
+}
+
+#hobbies ul li, 
+#goals ul li {
+  margin-bottom: 10px; /* Space between each list item */
+}
 
 
 </style>
-
