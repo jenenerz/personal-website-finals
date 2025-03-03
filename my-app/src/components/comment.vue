@@ -51,6 +51,7 @@ body {
 
 .comment-section {
   margin-top: 20px;
+  text-align: left;
 }
 
 .comment {

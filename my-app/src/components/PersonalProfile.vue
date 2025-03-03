@@ -155,7 +155,7 @@ body {
 }
 
 #section3 {
-  background-image: url('/images/bg3.png');
+  background-image: url('/images/bg.3.png');
 }
 
 #section5 {
