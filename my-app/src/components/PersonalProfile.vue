@@ -1,9 +1,10 @@
 <template>
-  <div id="section1">
-    <div class="navbar">
-      <a href="#section2">ACADS</a>
-      <a href="#section3">INTERESTS</a>
-    </div>
+  <div id="section1" class="menu-icon" onclick="toggleNav()">☰</div>
+<div class="sliding-nav" id="slidingNav">
+  <a href="#section2">ACADS</a>
+  <a href="#section3">INTERESTS</a>
+  <a href="javascript:void(0)" onclick="toggleNav()">Close</a>
+</div>
 
     <div class="socials">
       <p>Add me on my socials!</p>
@@ -92,15 +93,46 @@
   </div>
 </div>
 
-
-  <div id="section5" class="picture-gallery">
-    <img src="/images/gallery.png" alt="Picture Gallery" />
+  <div id="section4">
+    <div class="carousel-container">
+      <div class="carousel">
+        <img v-for="(image, index) in images" :key="index" :src="image" :alt="'Image ' + (index + 1)" :class="{ active: index === currentIndex }">
+      </div>
+    </div>
   </div>
+
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      images: [
+        "/images/gallery1.jpg",
+        "/images/gallery2.jpg",
+        "/images/gallery3.jpg",
+        "/images/gallery4.jpg",
+        "/images/gallery5.jpg",
+        "/images/gallery6.jpg",
+        "/images/gallery7.jpg",
+        "/images/gallery8.jpg",
+        "/images/gallery9.jpg"
+      ],
+      currentIndex: 0
+    };
+  },
+  mounted() {
+    setInterval(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    }, 3000); // 3 seconds per slide
+  }
+};
 
-<script setup>
-// Vue 3 does not require options like `export default` in `<script setup>`
+function toggleNav() {
+  const nav = document.getElementById('slidingNav');
+  nav.classList.toggle('open');
+}
+
 </script>
 
 <style>
@@ -148,6 +180,7 @@ body {
 
 #section1 {
   background-image: url('/images/bg1.png');
+  margin-top: -5px; 
 }
 
 #section2 {
@@ -155,8 +188,18 @@ body {
 }
 
 #section3 {
-  background-image: url('/images/bg.3.png');
+  background-image: url('/images/bgd3.png');
 }
+
+#section4 {
+  background-image: url('/images/bg4.png');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  width: 100%; /* Ensures full width */
+  min-height: 100vh; /* Ensures it fills the full height of the viewport */
+}
+
 
 #section5 {
   background-color: #f8f7f2;
@@ -352,5 +395,94 @@ body {
   margin-bottom: 10px; /* Space between each list item */
 }
 
+/* Section 4 Styles */
+#section4 {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f8f7f2;
+}
+
+
+.carousel-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  margin-top: 80px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+/* Mobile and Tablet View */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; /* Hide default navbar */
+  }
+
+  .sliding-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #562123;
+    z-index: 1001;
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+  }
+
+  .sliding-nav a {
+    display: block;
+    color: #f8f7f2;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+
+  .sliding-nav a:hover {
+    background: #774246;
+  }
+
+  .sliding-nav.open {
+    left: 0; /* Slide-in */
+  }
+
+  .menu-icon {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1002;
+    font-size: 30px;
+    cursor: pointer;
+    color: #f8f7f2;
+  }
+
+  .education-container,
+  #experience,
+  #hobbies-and-goals {
+    width: 90%; /* Adjust sections for better fit */
+    margin: 10px auto; /* Add spacing */
+  }
+
+  .carousel-container {
+    width: 90%; /* Ensure the carousel fits smaller screens */
+  }
+}
 
 </style>
