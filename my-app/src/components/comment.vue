@@ -35,7 +35,9 @@
         <div class="footer-links">
             <a href="#section1">HOME</a>
             <a href="#section2">ACADS</a>
-            <a href="#hobbies">INTERESTS</a>
+            <a href="#hobbies">INTERESTS & DREAMS</a>
+            <a href="#section4">GALLERY</a>
+            <a href="#comments">GUESTBOOK</a>
         </div>
     </footer>
 
