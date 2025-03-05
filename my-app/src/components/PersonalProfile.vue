@@ -472,6 +472,7 @@ body {
 
 /* Mobile View */
 @media (max-width: 768px) {
+
   .education-container,
   #experience {
     width: 90%;
@@ -487,7 +488,7 @@ body {
 @media (max-width: 768px) {
 
   #section1 {
-    padding-bottom: 100px; /* Adds more space at the bottom */
+    padding-bottom: 130px; /* Adds more space at the bottom */
   }
 
   .education-container {
@@ -515,7 +516,7 @@ body {
     .carousel-container {
     width: 35%; /* Reduce width */
     max-width: 400px; /* Limit max size */
-    padding-top: 28px;
+    padding-top: 32px;
   }
 
   #experience .two-columns {
@@ -523,19 +524,18 @@ body {
     gap: 10px;
   }
 
+
   #hobbies-and-goals {
     flex-direction: column;
     gap: 20px;
     height: auto;
     max-height: none;
+    width: 100%;
+    margin-bottom: 50px
   }
 
-    #hobbies-and-goals {
-    margin-bottom: 50px; /* Adds space between Hobbies/Goals and the Carousel */
-  }
-
-    .carousel-container {
-    margin-top: 120px; /* Adjust to move it down */
+  .carousel-container {
+    margin-top: 140px; /* Adjust to move it down */
   }
 
 /*Comment Section */
