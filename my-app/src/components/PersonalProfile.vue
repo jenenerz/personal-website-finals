@@ -521,6 +521,11 @@ body {
     margin: 20px auto;
   }
 
+  #section3 h2 {
+  margin-bottom: 20px; /* Adjust the space as needed */
+}
+
+
     .carousel-container {
     width: 35%; /* Reduce width */
     max-width: 400px; /* Limit max size */
@@ -533,7 +538,7 @@ body {
   }
 
   #section3 #experience {
-   width: 100%; /* Makes it take up full width */
+   width: 90%; /* Makes it take up full width */
     max-width: none; /* Ensures it's not constrained */
     margin: 20px auto; /* Centers it */
     padding: 20px;
