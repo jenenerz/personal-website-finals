@@ -489,11 +489,15 @@ body {
   #section1 {
     padding-bottom: 100px; /* Adds more space at the bottom */
   }
-  
+
   .education-container {
     width: 95% !important; /* Force the width to increase */
     max-width: none !important; /* Ensure it's not limited by a max-width */
-    padding: 25px !important;
+    padding: 30px !important;
+  }
+
+  .education-wrapper {
+    width: 100%; /* Ensure the parent allows full width */
   }
 
   .education-image {
