@@ -492,7 +492,7 @@ body {
   }
 
   .socials {
-    bottom: -30px; /* Adjust this to move it lower */
+    bottom: -40px; /* Adjust this to move it lower */
   }
 
   .education-container {
@@ -539,7 +539,7 @@ body {
   }
 
   .carousel-container {
-    margin-top: 138px; /* Adjust to move it down */
+    margin-top: 134px; /* Adjust to move it down */
   }
 
 /*Comment Section */
