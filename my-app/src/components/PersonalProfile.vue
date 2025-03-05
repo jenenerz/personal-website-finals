@@ -488,7 +488,11 @@ body {
 @media (max-width: 768px) {
 
   #section1 {
-    padding-bottom: 130px; /* Adds more space at the bottom */
+    padding-bottom: 100px; /* Adds more space at the bottom */
+  }
+
+  .socials {
+    bottom: -30px; /* Adjust this to move it lower */
   }
 
   .education-container {
@@ -535,7 +539,7 @@ body {
   }
 
   .carousel-container {
-    margin-top: 140px; /* Adjust to move it down */
+    margin-top: 138px; /* Adjust to move it down */
   }
 
 /*Comment Section */
