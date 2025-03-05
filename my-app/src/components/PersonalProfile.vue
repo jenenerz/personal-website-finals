@@ -485,6 +485,10 @@ body {
 
 /* Mobile & Tablet View */
 @media (max-width: 768px) {
+
+  .socials {
+    bottom: 20px; /* Adjust this to move it lower */
+  }
   .education-container {
     width: 95% !important; /* Force the width to increase */
     max-width: none !important; /* Ensure it's not limited by a max-width */
