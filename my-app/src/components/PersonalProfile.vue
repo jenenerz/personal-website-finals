@@ -624,20 +624,5 @@ body {
 }
 }
 
-@media (min-height: 601px) and (max-width: 1024px) {
-
-  .socials {
-    bottom: -20px; /* Adjust this to move it lower */
-  }
-
-.carousel {
-    width: 65%;  /* Adjust this to make it smaller */
-    max-width: 600px; /* Limits max size */
-    height: auto; /* Adjust height automatically */
-    margin-left:100px;
-    margin-top:-30px;
-}
-
-}
 
 </style>
