@@ -2,7 +2,7 @@
   <div id="section1">
     <div class="navbar">
       <a href="#section2">ACADS</a>
-      <a href="#section3">INTERESTS & MORE</a>
+      <a href="#section3">MORE</a>
     </div>
 
     <div class="socials">
@@ -496,12 +496,17 @@ body {
     max-width: none !important;
   }
 
-    #section4 {
-    background-size: contain !important; /* Shrinks the image while keeping aspect ratio */
+  #section4 {
+    background-size: 90% auto !important; /* Keeps width at 90% while adjusting height automatically */
     background-position: center !important;
     background-repeat: no-repeat !important;
-    min-height: 70vh !important; /* Reduce height to make the background smaller */
-    min-width: 600vh;
+    min-height: 70vh !important; /* Increase height to prevent excessive shrinking */
+  }
+
+    .carousel-container {
+    width: 35%; /* Reduce width */
+    max-width: 400px; /* Limit max size */
+    padding-top: 28px;
   }
 
   #experience .two-columns {
@@ -522,11 +527,6 @@ body {
 
     .carousel-container {
     margin-top: 120px; /* Adjust to move it down */
-  }
-
-    .carousel-container {
-    width: 90%; /* Reduce width */
-    max-width: 400px; /* Limit max size */
   }
 
 /*Comment Section */
