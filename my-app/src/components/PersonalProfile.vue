@@ -115,7 +115,10 @@ export default {
         "/images/gallery6.jpg",
         "/images/gallery7.jpg",
         "/images/gallery8.jpg",
-        "/images/gallery9.jpg"
+        "/images/gallery9.jpg",
+        "/images/gallery10.jpg",
+        "/images/gallery11.jpg",
+        "/images/gallery12.jpg"
       ],
       currentIndex: 0,
       isNavOpen: false
@@ -484,7 +487,7 @@ body {
   }
 }
 
-/* Mobile & Tablet View */
+/* Mobile View */
 @media (max-width: 768px) {
 
   #section1 {
@@ -496,8 +499,8 @@ body {
   }
 
   .education-container {
-    width: 95% !important; /* Force the width to increase */
-    max-width: none !important; /* Ensure it's not limited by a max-width */
+    width: 95% !important; 
+    max-width: none !important; 
     padding: 30px !important;
   }
 
@@ -515,6 +518,7 @@ body {
     background-position: center !important;
     background-repeat: no-repeat !important;
     min-height: 70vh !important; /* Increase height to prevent excessive shrinking */
+    margin: 20px auto;
   }
 
     .carousel-container {
@@ -527,6 +531,13 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+
+  #section3 #experience {
+   width: 100%; /* Makes it take up full width */
+    max-width: none; /* Ensures it's not constrained */
+    margin: 20px auto; /* Centers it */
+    padding: 20px;
+}
 
 
   #hobbies-and-goals {
