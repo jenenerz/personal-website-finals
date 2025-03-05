@@ -174,6 +174,27 @@ body {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-links a {
+    text-align: center;
+  }
+}
+
+
 </style>
 
 <script setup>
