@@ -269,13 +269,22 @@ body {
   display: flex;
   justify-content: center;
   gap: 15px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+
 }
 
 .social-icons a img {
   width: 40px;
   height: 40px;
   filter: brightness(0) invert(1);
+
 }
+
+.social-icons a:hover img {
+  transform: scale(1.2); 
+  filter: brightness(1) invert(0); 
+}
+
 
 /* Education */
 .education-wrapper {
@@ -624,5 +633,45 @@ body {
 }
 }
 
+/* Hover animation for sections */
+
+
+.education-container,
+#section3 #experience,
+#hobbies-and-goals {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.education-container:hover,
+#section3 #experience:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover animation for Education and IT Experience */
+.education-container,
+#section3 #experience {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.education-container:hover,
+#section3 #experience:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover animation for Hobbies */
+#hobbies {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#hobbies:hover {
+  transform: rotate(3deg);
+}
+
+/* Hover animation for Goals */
+#goals:hover {
+  transform: rotate(-3deg);
+}
 
 </style>

@@ -24,31 +24,31 @@
     </div>
   </div> 
 
-  <!-- References Section -->
-  <div class="references-container">
-    <h3>References:</h3>
-    <div class="references">
-      <a href="https://copilot.microsoft.com" target="_blank">Copilot</a>
-      <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
-      <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
-    </div>
-  </div>
 
-  <!-- FOOTER Section -->
+ <!-- FOOTER Section -->
   <div class="container">
-      <footer class="footer">
-          <div class="footer-logo">
-              <img src="/images/website-logo.png" alt="Logo" width="180">
-          </div> 
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="/images/website-logo.png" alt="Logo" width="180">
+      </div> 
 
-          <div class="footer-links">
-              <a href="#section1">HOME</a>
-              <a href="#section2">ACADS</a>
-              <a href="#hobbies">INTERESTS & DREAMS</a>
-              <a href="#section4">GALLERY</a>
-              <a href="#comments">GUESTBOOK</a>
-          </div>
-      </footer>
+      <div class="references-container">
+        <h3>References:</h3>
+        <div class="references">
+          <a href="https://copilot.microsoft.com" target="_blank">Copilot</a>
+          <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+          <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#section1">HOME</a>
+        <a href="#section2">ACADS</a>
+        <a href="#hobbies">INTERESTS & DREAMS</a>
+        <a href="#section4">GALLERY</a>
+        <a href="#comments">GUESTBOOK</a>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -159,7 +159,7 @@ body {
 }
 
 .references a {
-  color: #562123;
+  color: #f5f3f5;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
