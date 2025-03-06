@@ -24,25 +24,32 @@
     </div>
   </div> 
 
+  <!-- References Section -->
+  <div class="references-container">
+    <h3>References:</h3>
+    <div class="references">
+      <a href="https://copilot.microsoft.com" target="_blank">Copilot</a>
+      <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+      <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+    </div>
+  </div>
 
-<!-- FOOTER Section -->
-<div class="container">
-    <footer class="footer">
-        <div class="footer-logo">
-            <img src="/images/website-logo.png" alt="Logo" width="180">
-        </div> 
+  <!-- FOOTER Section -->
+  <div class="container">
+      <footer class="footer">
+          <div class="footer-logo">
+              <img src="/images/website-logo.png" alt="Logo" width="180">
+          </div> 
 
-        <div class="footer-links">
-            <a href="#section1">HOME</a>
-            <a href="#section2">ACADS</a>
-            <a href="#hobbies">INTERESTS & DREAMS</a>
-            <a href="#section4">GALLERY</a>
-            <a href="#comments">GUESTBOOK</a>
-        </div>
-    </footer>
-
-</div>
-
+          <div class="footer-links">
+              <a href="#section1">HOME</a>
+              <a href="#section2">ACADS</a>
+              <a href="#hobbies">INTERESTS & DREAMS</a>
+              <a href="#section4">GALLERY</a>
+              <a href="#comments">GUESTBOOK</a>
+          </div>
+      </footer>
+  </div>
 </template>
 
 <style>
@@ -138,6 +145,29 @@ body {
   margin-bottom: 15px; 
 }
 
+.references-container {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.references {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.references a {
+  color: #562123;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
 
 .footer {
     background-color: #562123;
@@ -194,7 +224,6 @@ body {
   }
 }
 
-
 </style>
 
 <script setup>
@@ -202,14 +231,13 @@ import { ref, onMounted } from 'vue';
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = "https://jmfmnoxehtzhzvofgglp.supabase.co";
-const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImptZm1ub3hlaHR6aHp2b2ZnZ2xwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA4MTUzMjYsImV4cCI6MjA1NjM5MTMyNn0.6Yl0_kpA3Ghoh2bDeEVccuVAr1QgiZ12SpYTei_K_MQ";
+const supabaseAnonKey = "YOUR_SUPABASE_ANON_KEY";
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 const guestName = ref('');
 const guestComment = ref('');
 const comments = ref([]);
 
-// Fetch existing comments on load
 const fetchComments = async () => {
   const { data, error } = await supabase.from('comments').select('*').order('created_at', { ascending: false });
   if (error) console.error(error);
@@ -218,7 +246,6 @@ const fetchComments = async () => {
 
 onMounted(fetchComments);
 
-// Add new comment
 const addComment = async () => {
   if (!guestName.value || !guestComment.value) return;
 
@@ -229,11 +256,9 @@ const addComment = async () => {
   if (error) {
     console.error(error);
   } else {
-    fetchComments(); // Refresh comments
+    fetchComments();
     guestName.value = '';
     guestComment.value = '';
   }
 };
 </script>
-
-
