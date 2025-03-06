@@ -222,6 +222,10 @@ body {
   .footer-links a {
     text-align: center;
   }
+
+  .references {
+  margin-bottom: 20px;
+}
 }
 
 </style>
